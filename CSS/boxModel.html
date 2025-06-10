@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            background-color: aqua;
+            padding: 12px;
+            margin: 12px;
+            border: 2px solid black;
+            height: 200px;
+            box-sizing: border-box;
+        }
+        
+        /* p {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-weight: 800;
+            text-decoration: underline;
+        } */
+
+        .child {
+            font-size: 3em;
+            text-transform: capitalize;
+        }
+        .parent {
+            font-size: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">this is a box.</div>
+    <p>this is a para</p>
+
+    <div class="parent">
+        parent element
+        <p class="child">child element</p>
+    </div>
+</body>
+</html>

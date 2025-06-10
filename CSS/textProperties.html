@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            /* center the text of the element */
+            text-align: center;
+            /* underline the text */
+            text-decoration:underline;
+            /* set the underline color */
+            text-decoration-color: brown;
+            /* underline would be dashed style */
+            /* text-decoration-style: dashed; */
+            text-decoration-thickness: 8px;
+            /* indent means space, place this element 45px on the right */
+            text-indent: 45px;
+        }
+
+        p {
+            border: 2px solid red;
+            width: 50px;
+            /* break the word & remaining on the next line when width ends */
+            /* word-break: break-all; */
+
+            /* Default value. The text is clipped and not accessible	 */
+            /* text-overflow: clip; */
+
+            /* Render an ellipsis ("...") to represent the clipped text	 */
+            text-overflow:ellipsis;
+            /* don't show the text that is going outside the box, width */
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h2>text properties</h2>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur!</p>
+</body>
+</html>
