@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Challenge</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: rgb(230, 229, 229);
+            display: flex;
+            justify-content: center;
+            margin: auto;
+        }
+        .card {
+            background-color: white;
+            height: 90vh;
+            width: 30vw;
+            border: 2px solid rgb(196, 188, 188);
+            border-radius: 13px;
+            padding: 10px;
+            margin: 20px;
+            box-shadow: 5px 5px 15px gray;
+        }
+        .img {
+            background-image: url('./lake_image.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 13px;
+            width: 100%;
+            height: 50%;
+        }
+        .content {
+            padding: 15px;
+        }
+        .labels {
+            margin: 9px 9px 9px 0;
+        }
+        .labels span {
+            border: 2px solid rgb(230, 230, 230);
+            border-radius: 15px;
+            padding: 3px 8px;
+            margin-right: 7px;
+        }
+        h2 {
+            margin: 9px 0;
+        }
+        p, span {
+            color: gray;
+        }
+        .btn {
+            background-color: rgb(215, 245, 255);
+            color: rgb(0, 138, 252);
+            border: none;
+            border-radius: 20px;
+            padding: 15px 20px;
+            cursor: pointer;
+            display: block;
+            margin: 15px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="img"></div>
+            <div class="content">
+                <div class="labels">
+                    <span>Nature</span>
+                    <span>Lake</span>
+                </div>
+                <h2>The Beautiful Lake</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui magni aut harum aperiam nam! Eligendi deleniti voluptatum quae adipisci ducimus veritatis aliquid incidunt.</p>
+                <button class="btn">Read More</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
