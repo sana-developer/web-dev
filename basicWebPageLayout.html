@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position & flex usage</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: pink;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+      }
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+      }
+      .nav-links li {
+        cursor: pointer;
+      }
+      .nav-links li:hover {
+        color: red;
+      }
+      .container {
+        display: flex;
+        margin: 1rem 0.5rem;
+        padding: 3rem 2rem;
+        background-color: green;
+        height: 70vh;
+        gap: 1rem;
+      }
+      .container .left, .right {
+        flex: 1;
+        background-color: yellow;
+      }
+      .chat-btn {
+        content: "";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: fixed;
+        background-color: tan;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        bottom: 1rem;
+        right: 1rem;
+      }
+      .services {
+        background-color: lightcoral;
+        padding: 2rem;
+        border: 2px solid white;
+        border-radius: 3rem;
+        margin: 2rem 1rem;
+      }
+      .footer {
+        background-color: black;
+        color: wheat;
+        text-align: center;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+
+      <div class="chat-btn">Chat</div>
+
+
+      <header>
+        <div>Sana Saghir</div>
+        <ul class="nav-links">
+          <li>Home</li>
+          <li>About</li>
+          <li>Features</li>
+          <li>Contact</li>
+        </ul>
+      </header>
+      <div class="container">
+        <div class="left"></div>
+        <div class="right"></div>
+      </div>
+      <div class="services">
+        lorem23Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentia
+      </div>
+      <div class="footer">copyright &copy; All rights reserved...</div>
+    </div>
+  </body>
+</html>
